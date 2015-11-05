@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache updateCheck="false" monitoring="autodetect" dynamicConfig="false">
+
+    <diskStore path="java.io.tmpdir"/>
+
+    <defaultCache
+           maxElementsInMemory="1000"
+           eternal="true"
+           timeToIdleSeconds="3600"
+           timeToLiveSeconds="3600"
+           overflowToDisk="true"
+           diskSpoolBufferSizeMB="1" />
+
+
+    <!-- os -->
+    <cache name="os" maxElementsInMemory="1000"/>
+
+    <!-- code -->
+    <cache name="code" maxElementsInMemory="1000"/>
+
+    <!-- product -->
+    <cache name="product" maxElementsInMemory="1000"/>
+
+    <!-- img -->
+    <cache name="img" maxElementsInMemory="1000"/>
+
+    <!-- studio -->
+    <cache name="studio" maxElementsInMemory="1000"/>
+
+    <!-- language -->
+    <cache name="language" maxElementsInMemory="1000"/>
+
+    <!-- menu -->
+    <cache name="menu" maxElementsInMemory="1000"/>
+
+    <!-- user -->
+    <cache name="user" maxElementsInMemory="1000"/>
+
+    <!-- info -->
+    <cache name="info" maxElementsInMemory="1000"/>
+
+    <!-- productlevel -->
+    <cache name="productlevel" maxElementsInMemory="1000"/>
+
+    <!-- aporialevel -->
+    <cache name="aporialevel" maxElementsInMemory="1000"/>
+
+    <!-- technicalpoint -->
+    <cache name="technicalpoint" maxElementsInMemory="1000"/>
+
+    <!-- target -->
+    <cache name="target" maxElementsInMemory="1000"/>
+
+    <!-- aporia -->
+    <cache name="aporia" maxElementsInMemory="1000"/>
+
+    <!-- productgroup -->
+    <cache name="productgroup" maxElementsInMemory="1000"/>
+
+</ehcache>

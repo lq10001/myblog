@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="utf-8" />
+	<title>Info</title>
+	<link rel="stylesheet" href="${ctxPath}/editormd/css/style.css" />
+	<link rel="stylesheet" href="${ctxPath}/editormd/css/editormd.css" />
+
+
+
+</head>
+<body>
+<div id="layout">
+	<form id="form1" method="post" action="${ctxPath}/myinfo/save">
+
+		<input type="hidden" id="id" name="id" value="${myinfo.id!}">
+		<input type="hidden" id="info" name="info" value="">
+
+		<div style="width:90%;margin: 10px auto;">
+			<label for="j_titile" class="control-label x85" size="10">标题</label>
+			<input style="width: 200px;" type="text" name="titile" id="j_titile" value="${myinfo.titile!}">
+		</div>
+
+		<div style="width:90%;margin: 10px auto;" id="info-editormd">
+			<label for="infomd" class="control-label x85" size="10">内容</label>
+			<textarea id="infomd" name="infomd" style="display:none;">${myinfo.infomd!}</textarea>
+		</div>
+		<div style="width:90%;margin: 10px auto;">
+			<input id="btnOk" type="submit" name="submit" value="提交表单 Submit" style="padding: 5px;" onclick="ok()" />
+		</div>
+	</form>
+</div>
+
+<script src="${ctxPath}/BJUI/BJUI/js/jquery-1.7.2.min.js"></script>
+<script src="${ctxPath}/editormd/editormd.min.js"></script>
+
+<script type="text/javascript">
+	var testEditor;
+
+	$(function() {
+		testEditor = editormd("info-editormd", {
+			width   : "90%",
+			height  : 650,
+			syncScrolling : "single",
+			path    : "${ctxPath}/lib/",
+			saveHTMLToTextarea : true
+		});
+	});
+
+	function ok()
+	{
+		//提交关闭
+		var info = testEditor.getHTML();
+		$("#info").val(info);
+		$("#form1").submit();
+	}
+
+</script>
+</body>
+</html>

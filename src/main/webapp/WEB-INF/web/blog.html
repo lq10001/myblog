@@ -1,0 +1,55 @@
+<%
+include("top.html"){}
+%>
+<body>
+
+<%
+include("menu.html"){}
+%>
+
+<div class="container">
+
+  <div class="blog-header">
+    <h1 class="blog-title">钟伟的博客</h1>
+    <p class="lead blog-description">记录工作，学习中遇到的技术问题，知识点。</p>
+  </div>
+
+  <div class="row">
+
+    <div class="col-sm-8 blog-main">
+
+      <div class="blog-post">
+
+        <h2 class="blog-post-title">${blog.titile!}</h2>
+        <p class="blog-post-meta"><a href="${ctxPath}/blogList?blogclassid=${blog.blogclassid}">${blog.blogclassname!}</a><span style="margin-left: 20px;">${blog.adddate!,'yyyy-MM-dd'}</span></p>
+        <p>
+          ${blog.info!}
+        </p>
+
+      </div><!-- /.blog-post -->
+
+    </div><!-- /.blog-main -->
+
+    <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+
+      <%
+      include("sidebar.html"){}
+      %>
+
+    </div><!-- /.blog-sidebar -->
+
+  </div><!-- /.row -->
+
+</div><!-- /.container -->
+
+<%
+include("footer.html"){}
+%>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="${ctxPath}/js/jquery-1.7.2.min.js"></script>
+<script src="${ctxPath}/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

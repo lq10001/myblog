@@ -1,0 +1,52 @@
+
+<%
+var selected1 = "";
+%>
+<div class="bjui-pageContent">
+  <form method="post" action="${ctxPath}/myinfo/save" class="pageForm" data-toggle="validate">
+
+    <input type="hidden" id="id" name="id" value="${myinfo.id!}">
+    <input type="hidden" id="action" name="action" value="${action!}">
+
+
+    	<div class="pageFormContent" data-layout-h="0">
+
+    		<table class="table table-condensed table-hover" width="100%">
+				<tbody>
+
+
+				<tr>
+					<td>
+						<label for="j_titile" class="control-label x85">标题</label>
+						<input type="text" name="titile" id="j_titile" value="${myinfo.titile!}" data-rule="" size="20">
+		            </td>
+		        </tr>
+
+				<tr>
+					<td>
+						<label for="j_info" class="control-label x85">内容</label>
+						<input type="text" name="info" id="j_info" value="${myinfo.info!}" data-rule="" size="20">
+		            </td>
+		        </tr>
+
+				<tr>
+					<td>
+						<label for="j_infomd" class="control-label x85">内容md</label>
+						<input type="text" name="infomd" id="j_infomd" value="${myinfo.infomd!}" data-rule="" size="20">
+		            </td>
+		        </tr>
+
+				</tbody>
+			</table>
+		</div>
+
+
+	</form>
+</div>
+
+<div class="bjui-pageFooter">
+	<ul>
+		<li><button type="button" class="btn-close" data-icon="close">取消</button></li>
+		<li><button type="submit" class="btn-default" data-icon="save">保存</button></li>
+	</ul>
+</div>
