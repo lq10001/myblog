@@ -68,9 +68,9 @@ var selected1 = "";
 
 					<th width="50">编号</th>
 
-					<th>分类</th>
-
 					<th>标题</th>
+
+					<th>分类</th>
 
 					<th>添加日期</th>
 
@@ -88,25 +88,17 @@ var selected1 = "";
 
             <tr data-id="${obj.id}">
 
-
-
 			<td>
 				 ${obj.id!}
 			</td>
 
-
+			<td>
+				${obj.titile!}
+			</td>
 
 			<td>
-
             	${obj.blogclassname!}
-
 			</td>
-
-			<td>
-				 ${obj.titile!}
-			</td>
-
-
 
 			<td>
 				${obj.adddate!,'yyyy-MM-dd'}
@@ -116,11 +108,9 @@ var selected1 = "";
 				${obj.editdate!,'yyyy-MM-dd'}
             </td>
 
-
 			<td>
 				 ${obj.gotop!}
 			</td>
-
 
             </tr>    
          <%}%>   
