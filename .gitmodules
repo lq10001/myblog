@@ -1,3 +1,6 @@
 [submodule "src/main/webapp/BJUI"]
 	path = src/main/webapp/BJUI
 	url = https://git.oschina.net/xknaan/B-JUI.git
+[submodule "src/main/java/com/ly/sys"]
+	path = src/main/java/com/ly/sys
+	url = https://git.oschina.net/dongfangx/nutz-sys.git
