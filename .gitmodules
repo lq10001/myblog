@@ -12,4 +12,4 @@
 	url = https://git.oschina.net/dongfangx/SYS-HTML-WEBSERVER-JAVA.git
 [submodule "src/main/webapp/sys"]
 	path = src/main/webapp/sys
-	url = https://git.oschina.net/dongfangx/sys-resources.git
+	url = https://git.oschina.net/dongfangx/SYS-RESOURCES-WEBSERVER-NUTZ-JAVA.git
