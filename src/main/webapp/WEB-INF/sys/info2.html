@@ -1,0 +1,40 @@
+
+<div class="pageContent">
+  <form method="post" action="${ctxPath}/info/save" class="pageForm required-validate" onsubmit="return validateCallback(this, dialogAjaxDone);">
+
+    <input type="hidden" id="id" name="id" value="${info.id!}">
+
+		<div class="pageFormContent nowrap" layoutH="56">
+			
+					<dl>
+		                <dt>系统名称</dt>
+		                <dd>
+		                <input name="name"  type="text" size="120" value="${info.name!}" maxlength="100" class="required" alt=""/>
+		                </dd>
+		            </dl>
+	            
+					<dl>
+		                <dt>系统名称2</dt>
+		                <dd>
+		                <input name="name2"  type="text" size="120" value="${info.name2!}" maxlength="100" class="required" alt=""/>
+		                </dd>
+		            </dl>
+	            
+					<dl>
+		                <dt>公司名称</dt>
+		                <dd>
+		                <input name="corpname"  type="text" size="120" value="${info.corpname!}" maxlength="100" class="required" alt=""/>
+		                </dd>
+		            </dl>
+	            			
+		</div>
+		<div class="formBar">
+			<ul>
+				<li><div class="buttonActive"><div class="buttonContent"><button type="submit">保存</button></div></div></li>
+				<li>
+					<div class="button"><div class="buttonContent"><button type="button" class="close">取消</button></div></div>
+				</li>
+			</ul>
+		</div>
+	</form>
+</div>
