@@ -21,7 +21,7 @@ if __name__ == '__main__':
 	["git submodule add --force https://git.oschina.net/dongfangx/nutz-common.git src/main/java/com/ly/comm/", 'v1.0'],
 	["git submodule add --force https://git.oschina.net/dongfangx/beetl-bjui-sys.git src/main/webapp/WEB-INF/sys/", 'v1.0'],
 	["git submodule add --force https://git.oschina.net/dongfangx/sys-resources.git src/main/webapp/sys/", 'v1.0'],
-	["git submodule add --force https://git.oschina.net/xknaan/B-JUI.git src/main/webapp/BJUI/", 'master']]
+	["git submodule add --force https://git.oschina.net/dongfangx/BJUI.git src/main/webapp/BJUI/", "release_v1.2"]]
 
 	for cmd in commands:
 		p = subprocess.Popen(cmd[0], stdout=subprocess.PIPE, env=os.environ, shell=True)
