@@ -7,3 +7,6 @@
 [submodule "src/main/java/com/ly/comm"]
 	path = src/main/java/com/ly/comm
 	url = git@git.oschina.net:dongfangx/nutz-common.git
+[submodule "src/main/webapp/sys"]
+	path = src/main/webapp/sys
+	url = git@git.oschina.net:dongfangx/sys-resources.git
