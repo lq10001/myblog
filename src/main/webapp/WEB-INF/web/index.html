@@ -25,8 +25,8 @@ include("top.html"){}
           <div class="blog-post">
 
 
-            <h2 class="blog-post-title"><a href="${ctxPath}/blogInfo?id=${blog.id!}"> ${blog.titile!}</a></h2>
-            <p class="blog-post-meta"><a href="${ctxPath}/blogList?blogclassid=${blog.blogclassid}">${blog.blogclassname!}</a><span style="margin-left: 20px;">${blog.adddate!,'yyyy-MM-dd'}</span></p>
+            <h2 class="blog-post-title"><a href="/blogInfo?id=${blog.id!}"> ${blog.titile!}</a></h2>
+            <p class="blog-post-meta"><a href="/blogList?blogclassid=${blog.blogclassid}">${blog.blogclassname!}</a><span style="margin-left: 20px;">${blog.adddate!,'yyyy-MM-dd'}</span></p>
             <p>
               ${blog.info!}
             </p>
@@ -37,8 +37,8 @@ include("top.html"){}
 
           <nav>
             <ul class="pager">
-              <li><a href="${ctxPath}/?pageCurrent=${page.pageNumber == 1 ? 1 : page.pageNumber - 1}">上一页</a></li>
-              <li><a href="${ctxPath}/?pageCurrent=${page.pageNumber == page.pageCount ? page.pageNumber : page.pageNumber + 1}">下一页</a></li>
+              <li><a href="/?pageCurrent=${page.pageNumber == 1 ? 1 : page.pageNumber - 1}">上一页</a></li>
+              <li><a href="/?pageCurrent=${page.pageNumber == page.pageCount ? page.pageNumber : page.pageNumber + 1}">下一页</a></li>
             </ul>
           </nav>
 
@@ -63,7 +63,7 @@ include("top.html"){}
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="${ctxPath}/js/jquery-1.7.2.min.js"></script>
-    <script src="${ctxPath}/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/jquery-1.7.2.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -9,7 +9,7 @@
     <url>http://maven.apache.org</url>
     <properties>
         <junit.version>4.12</junit.version>
-        <nutz.version>1.b.53</nutz.version>
+        <nutz.version>1.r.58</nutz.version>
         <beetl.version>2.1.4</beetl.version>
         <fastjson.version>1.2.4</fastjson.version>
         <servlet.version>3.1.0</servlet.version>
@@ -18,6 +18,7 @@
         <commons.version>3.3.2</commons.version>
         <supercsv.version>2.2.0</supercsv.version>
         <ehcache.version>2.9.1</ehcache.version>
+        <oss.version>2.2.3</oss.version>
 
     </properties>
 
@@ -25,7 +26,11 @@
 
 
     <dependencies>
-
+        <dependency>
+            <groupId>com.aliyun.oss</groupId>
+            <artifactId>aliyun-sdk-oss</artifactId>
+            <version>${oss.version}</version>
+        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
